@@ -5,11 +5,11 @@ const path = require("path");
 const envPath = path.resolve(__dirname, ".env");
 
 // dotenv 설정
-const result = dotenv.config({ path: envPath });
-if (result.error) {
-  console.error("Error loading .env file:", result.error);
-  process.exit(1);
-}
+// const result = dotenv.config({ path: envPath });
+// if (result.error) {
+//   console.error("Error loading .env file:", result.error);
+//   process.exit(1);
+// }
 
 const { connect } = require("./src/websocket");
 const tcpServer = require("./src/tcp_server"); // TCP 서버 import
